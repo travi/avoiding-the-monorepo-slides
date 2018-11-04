@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "lint:md": "markdownlint **/*.md",
+    "lint:js": "eslint . .storybook --cache",
+    "test:unit": "mocha --recursive test/unit",
+    "test:int": "cucumber.js test/int",
+    "test": "run-s lint:* test:* build:*",
+    "build:js": "rollup -c",
+    "commitmsg": "validate-commit-msg",
+    "precommit": "npm test",
+    "prepublish": "run-s build",
+    "sr:pre": "semantic-release pre",
+    "sr:post": "semantic-release post",
+    "semantic-release": "run-s sr:pre publish sr:post",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "2.0.0",
+    "husky": "0.13.4",
+    "npm-run-all": "4.0.2"
+  },
+  "version": "0.0.0-semantically-released",
+  "main": "lib/bundle.cjs.js",
+  "module": "lib/bundle.es.js",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

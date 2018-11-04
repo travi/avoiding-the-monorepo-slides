@@ -1,0 +1,6 @@
+"scripts": {
+  "start": "start-storybook -p 9002",
+  "test": "grunt",
+  "preversion": "npm test",
+  "prepublish": "grunt build"
+}

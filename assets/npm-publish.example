@@ -1,0 +1,17 @@
+deploy:
+  - skip_cleanup: true
+    provider: script
+    script: npm run build-storybook && npm run gh-pages
+    on:
+      node: '5.10'
+  - provider: npm
+    email: npm@travi.org
+    on:
+      node: 6.0
+      tags: true
+      repo: travi/admin.travi.org-components
+    api_key:
+      secure: IGXm3VTSwG1uowt8...
+env:
+  global:
+    secure: J2QEsxnJCSZZmJp...

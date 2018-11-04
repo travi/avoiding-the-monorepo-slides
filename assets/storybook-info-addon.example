@@ -1,0 +1,17 @@
+storiesOf('Resource List', module)
+    .addWithInfo(
+        'empty list',
+        'this is the empty state',
+        () => <ResourceList resourceType="foo" resources={[]}/>
+    )
+    .addWithInfo(
+        'rides list',
+        'list of rides',
+        () => (
+            <ResourceList resourceType="rides" resources={[
+                { id: 1, displayName: 'corvette' },
+                { id: 2, displayName: 'truck' },
+                { id: 3, displayName: 'camaro' }
+            ]}/>
+        )
+    );

@@ -1,0 +1,13 @@
+$ git log
+|
+commit ade9ed5df6ffdd80588368ae7bba2bf101359579
+Author: Matt Travi <foo@bar.com>
+Date:   Wed Jun 7 17:13:20 2017 -0500
+|
+feat(table-component): Add column sort
+|
+Acending and decending sort orders were added
+|
+BREAKING CHANGE: Adds a new required prop
+|
+closes #123

@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "lint:md": "markdownlint **/*.md",
+    "lint:js": "eslint . .storybook --cache",
+    "test:unit": "mocha --recursive test/unit",
+    "test:int": "cucumber.js test/int",
+    "test": "run-s lint:* test:* build:*",
+    "build:server": "babel src/server -d lib/server",
+    "build:shared": "babel src/shared -d lib/shared",
+    "build:client": "webpack --env production",
+    "serve:dev": "nodemon src/server/app.js",
+    "serve:dev-local": "nodemon src/server/app.js local",
+    "serve:webpack": "babel-node ./webpack-dev-server.js",
+    "start": "node dist/server/app.js",
+    "dev": "run-p serve:webpack serve:dev",
+    "commitmsg": "validate-commit-msg",
+    "precommit": "npm test"
+  },
+  "devDependencies": {
+    "husky": "0.13.4",
+    "npm-run-all": "4.0.2"
+  }
+}

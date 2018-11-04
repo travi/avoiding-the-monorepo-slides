@@ -1,0 +1,11 @@
+storiesOf('Resource List', module)
+    .add('empty list', () => (
+        <ResourceList resourceType="foo" resources={[]}/>
+    ))
+    .add('rides list', () => (
+        <ResourceList resourceType="rides" resources={[
+            { id: 1, displayName: 'corvette'},
+            { id: 2, displayName: 'truck'},
+            { id: 3, displayName: 'camaro'}
+        ]}/>
+    ));

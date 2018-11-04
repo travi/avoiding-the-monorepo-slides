@@ -1,0 +1,9 @@
+extends:
+- '@travi/travi/rules/tests/base'
+- '@travi/travi/rules/tests/mocha'
+- '@travi/travi/rules/tests/react'
+
+overrides:
+- files: mocha-setup.js
+  rules:
+    filenames/match-regex: off

@@ -1,0 +1,7 @@
+components/
+├── footer/
+|  ├── component.js
+|  ├── manifest.scss
+|  ├── _colors.scss
+|  ├── _structure.scss
+|  └── ...

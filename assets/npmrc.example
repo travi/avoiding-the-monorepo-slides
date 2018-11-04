@@ -1,0 +1,2 @@
+save-exact=true
+@dwolla-internal:registry=https://host/repository/npm-internal

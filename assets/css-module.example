@@ -1,0 +1,9 @@
+import styles from './styles.scss';
+
+export default function MyComponent() {
+    return (
+        <div className={styles.foo}>
+            Some Content
+        </div>
+    );
+}
