@@ -1,6 +1,6 @@
 {
   "hooks": {
     "pre-commit": "npm test",
-    "commit-msg": "validate-commit-msg"
+    "commit-msg": "commitlint -e"
   }
 }
