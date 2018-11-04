@@ -15,8 +15,6 @@
     "start": "babel-node webpack-dev-server.js",
     "predeploy": "run-s build",
     "deploy": "netlify deploy --site=$NETLIFY_SITE_ID --auth=$NETLIFY_ACCESS_TOKEN --dir=./lib --prod",
-    "commitmsg": "validate-commit-msg",
-    "precommit": "npm test",
     "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
     "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload"
   },
@@ -55,7 +53,7 @@
     "globstar": "1.0.0",
     "greenkeeper-lockfile": "1.14.0",
     "html-webpack-plugin": "3.2.0",
-    "husky": "1.0.0-rc.2",
+    "husky": "^1.1.3",
     "img-loader": "3.0.0",
     "jsdom": "11.10.0",
     "lodash-webpack-plugin": "0.11.5",

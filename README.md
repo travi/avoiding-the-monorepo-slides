@@ -8,7 +8,6 @@
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 [![PRs Welcome][PRs-badge]][PRs-link]
 
-
 [ci-link]: https://travis-ci.com/travi/avoiding-the-monorepo-slides
 [ci-badge]: https://img.shields.io/travis/com/travi/avoiding-the-monorepo-slides/master.svg
 [commit-convention-link]: https://conventionalcommits.org
