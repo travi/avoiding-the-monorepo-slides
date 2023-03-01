@@ -59,7 +59,7 @@
     "jsdom": "16.5.0",
     "lodash-webpack-plugin": "0.11.5",
     "markdownlint-cli": "0.13.0",
-    "mocha": "5.2.0",
+    "mocha": "10.2.0",
     "mq-polyfill": "1.1.8",
     "mustache-loader": "1.4.1",
     "netlify-cli": "^2.2.0",
